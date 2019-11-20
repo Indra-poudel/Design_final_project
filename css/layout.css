@@ -6,27 +6,23 @@ margin:auto;
 }
 
 .upper-body-wrapper{
-  overflow: hidden;
-  padding-right: 15px;
-   position: relative; 
-   padding: 0px;
+
+
+  background-image: url("../images/upper-body-background.png");
+  background-size:cover;
+
+ 
 
 }
 
 
-.upper-body-wrapper img{
 
-  width: 100%;
-
-}
 .headerwrapper{
   
   background-color: white;
   z-index: 1;
   opacity: 0.8;
-  position: absolute; 
   width:100%;
-  top:0px; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.10);
  
     
@@ -36,7 +32,7 @@ header nav ul{
 }
 header nav{
   margin: auto;
-  padding-left: 170px;
+  padding-left: 235px;
   padding-right: 200px;
   
 
@@ -45,11 +41,18 @@ header nav{
 hr{
   color: #f0f0f0;
 }
-
+.iconwrapper{
+  background-image: url("../images/hr.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
 
 .hotline {
   display: inline-block;
   float: right;
+  font-family:  'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
   
 }
 .menu {
@@ -57,9 +60,14 @@ hr{
   float: right;
   
 }
+.icon li:hover{
+color: blue;
+}
 .menu li{
   padding: 15px;
-  font-size: 12px;
+  font-size: 11px;
+  border-top: 2px solid transparent;
+  font-family: 'Roboto', sans-serif;
 }
 
 .menu li:hover{
@@ -81,23 +89,29 @@ header li{
 
 .middletext{
 margin: auto;
-position: absolute;
-top:50%;
 left: 0;
 width: 100%;
 text-align: center;
+padding-top: 250px;
+padding-bottom: 180px;
 }
 .middletext h2{
   font-style: normal;
   font-weight: normal;
-  font-size: 42px;
+  font-size: 56px;
   color: #303842;
-  padding-bottom: 30px;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  
   
 }
 .middletext p{
   color: #6b7c93;
-  padding-bottom: 25px;
+  padding-bottom: 45px;
+  font-family:  'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300
 }
 .middletext a{
   border-radius: 25px;
@@ -106,7 +120,10 @@ text-align: center;
   height: 44px; 
   padding :10px 20px 10px 20px; 
   color: #58b45c;
+  font-size: 14px;
+  font-family:  'Roboto', sans-serif;
   font-size: 12px;
+  text-decoration: none;
 
 }
 
@@ -117,6 +134,7 @@ text-align: center;
   
 
 }
+
 .customertxt{
   
   width: 30%;
@@ -138,13 +156,18 @@ text-align: center;
   display: inline-block;
 }
 .ourclientwrapper h2{
-  font-style: normal;
-  font-weight: normal;
-  color: #596068;
+  font-family:  'Roboto', sans-serif;
+  font-size: 24px;
+  
+  font-weight: 300;
+  color: #303842;
   padding: 10px 10px 10px 0px;
 }
 .ourclientwrapper p{
-  color:#95a2b3;
+  font-family: 'Open Sans', sans-serif;
+  color:#8191a6;
+  font-size: 14px;
+  font-weight: 300;
 }
 .laptop{
   
@@ -164,20 +187,29 @@ text-align: center;
     
   }
   .row1txt h4{
-    padding-bottom:15px;
+  padding-bottom:15px;
   font-style: normal;
   font-weight: normal;
   color: #596068;
-  font-size: 12px;
+  font-size: 13px;
+  font-family: "OpenSans";
+  font-weight: 600;
+  color: rgb(37, 43, 51);
+  line-height: 2.308;
+  text-align: left;
+
+  }
+  
 
     
-  }
+
   .row1txt p{
-   
-    font-style: normal;
-  font-weight: normal;
-  color: #c4ccd5;
-  font-size: 10px; 
+  font-family:  'Roboto', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  color: #8191a6;
+  font-size: 11px; 
   }
 
   
@@ -189,10 +221,30 @@ text-align: center;
   padding-right:50px ;
   
 }
-.firstcolumnwrapper{
+.firstcolumnwrapper,.firstcolumnwrapper2,.firstcolumnwrapper3,.firstcolumnwrapper4{
 display: inline-block;
 float: left;
 width: 50%;
+
+}
+.firstcolumnwrapper:hover img{
+
+  content: url("../images/cycle.png");
+
+}
+.firstcolumnwrapper2:hover img{
+
+  content: url("../images/bulb-hover.png");
+
+}
+.firstcolumnwrapper3:hover img{
+
+  content: url("../images/attatch-hover.png");
+
+}
+.firstcolumnwrapper4:hover img{
+
+  content: url("../images/correct-hover.png");
 
 }
 .firstcolumnwrapper img{
@@ -202,7 +254,7 @@ display: inline-block;
 .columnimg{
   display: inline-block;
   float:left;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   padding-right:35px ;
   width: 10%;
   border-right: 2px solid #f1f1f1;
@@ -230,17 +282,20 @@ hr{
 }
 
 .title h2{
-  padding-bottom:8px; ;
+  font-family:  'Roboto', sans-serif;
+  font-size: 24px;
+  padding-bottom:8px;
+  font-weight: 300;
   font-style: normal;
   font-weight: normal;
-  color: #596068;
-  font-size: 24px;
+  color: #303842;
+  
 }
 .title p{
-  
-  font-style: normal;
-  font-weight: normal;
-  color: #c4ccd5;
+  font-family:  'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #8191a6;
   font-size: 12px;
 }
 
@@ -249,17 +304,27 @@ hr{
   
 }
 .rectangle{
-  position: relative;
+  background-image: url("../images/Rectangle.png");
+  background-size: cover;
  
 }
 .projectwrapper{
   margin: auto;
   width: 40%;
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  
+  padding-top: 250px;
+  padding-bottom: 250px;
 
+}
+.projectwrapper h2{
+  font-family:  'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+}
+.projectwrapper p{
+  font-family:  'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color:#8191a6;
 }
 .clear{
 
@@ -271,14 +336,15 @@ hr{
   padding: 20px;
 }
 .clmn h3{
-  font-style: normal;
-  font-weight: normal;
-  color: #48d8bf;
+  font-family:  'Roboto', sans-serif;
+  font-weight: 100;
+  color: #32d5ba;
   font-size: 32px;
   padding: 10px;
   padding-left: 0px;
 }
 .clmn p{
+
   font-style: normal;
   font-weight: normal;
   color: #6b7c93;
@@ -294,12 +360,12 @@ hr{
   
 }
 .form label{
-  
+  font-family: "OpenSans";
   display: block;
   padding-top: 10px ;
   padding-bottom: 15px ;
-  font-size: 10px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 600;
 }
 .form input[type="text"] .form textarea{
   display: block;
@@ -381,11 +447,11 @@ float: left;
 }
 
 .contacttitle p{
-
+  font-family: "OpenSans";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   color: #c4ccd5;
-  font-size: 12px;
+  font-size: 15px;
 
 }
 .contact2wrapper{
